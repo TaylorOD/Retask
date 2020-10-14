@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+    <script src="tasks_functions.js"></script>
+
+    <h1>Retask</h1>
+    <h2>Add Tasks!</h2>
+    <input id="search-text" type="text" placeholder="Filter tasks">
+
+    <select id="filter-by">
+        <option value="byEdited">Sort By Last Edited</option>
+        <option value="byCreated">Sort By Recently Created</option>
+        <option value="alphabetical">Sort Alphabetically</option>
+    </select>
+
+    <div id="tasks"></div>
+    <button id="create-task">Create New task</button>
+
+
+
+    <script src="tasks_app.js"></script>
+    <script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>
+
+</body>
+
+</html>
